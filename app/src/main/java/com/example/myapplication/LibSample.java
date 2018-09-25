@@ -5,80 +5,60 @@ import org.w3c.dom.Text;
 import java.util.Map;
 
 class LibSample {
-    private String Floor;
-    private int lownumber;
-    private int highnumber;
-    private String Beginning;
-    private String Ending;
-    private String Map;
-    private String Text;
+    private String floor;
+    private String range;
+    private String beginning;
+    private String map;
+    private String rext;
 
     public String getFloor() {
-        return Floor;
+        return floor;
     }
 
     public void setFloor(String floor) {
-        Floor = floor;
+        this.floor = floor;
     }
 
-    public int getLownumber() {
-        return lownumber;
+    public String getRange() {
+        return range;
     }
 
-    public void setLownumber(int lownumber) {
-        this.lownumber = lownumber;
-    }
-
-    public int getHighnumber() {
-        return highnumber;
-    }
-
-    public void setHighnumber(int highnumber) {
-        this.highnumber = highnumber;
+    public void setRange(String range) {
+        this.range = range;
     }
 
     public String getBeginning() {
-        return Beginning;
+        return beginning;
     }
 
     public void setBeginning(String beginning) {
-        Beginning = beginning;
-    }
-
-    public String getEnding() {
-        return Ending;
-    }
-
-    public void setEnding(String ending) {
-        Ending = ending;
+        this.beginning = beginning;
     }
 
     public String getMap() {
-        return Map;
+        return map;
     }
 
     public void setMap(String map) {
-        Map = map;
+        this.map = map;
     }
 
-    public String getText() {
-        return Text;
+    public String getRext() {
+        return rext;
     }
 
-    public void setText(String text) {
-        Text = text;
+    public void setRext(String rext) {
+        this.rext = rext;
     }
 
     @Override
     public String toString() {
         return "LibSample{" +
-                "Floor='" + Floor + '\'' +
-                ", lownumber=" + lownumber +
-                ", highnumber=" + highnumber +
-                ", Beginning='" + Beginning + '\'' +
-                ", Ending='" + Ending + '\'' +
-                ", Map='" + Map + '\'' +
-                ", Text='" + Text + '\'' +
+                "floor='" + floor + '\'' +
+                ", range='" + range + '\'' +
+                ", beginning='" + beginning + '\'' +
+                ", map='" + map + '\'' +
+                ", rext='" + rext + '\'' +
                 '}';
     }
 }
